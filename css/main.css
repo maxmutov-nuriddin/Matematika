@@ -49,7 +49,7 @@ calculator::after {
   gap: 5px;
 }
 
-.number_for-x, .number_for-y, .submit{
+.number_for-x, .number_for-y, .submit, .clear{
   border-radius: 25px;
   padding: 15px;
   background-color: transparent;
@@ -88,7 +88,7 @@ td{
   display: flex;
 }
 
-.submit{
+.submit, .clear{
   width: 100%;
 }
 

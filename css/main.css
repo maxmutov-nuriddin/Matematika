@@ -16,11 +16,13 @@ body {
   margin: 0;
   padding: 5em 0 2em;
   text-align: center;
+  height: 100%;
 }
 
 h1 {
   font-weight: 300;
   margin: 0;
+  height: 100%;
 }
 
 /* Gradient text only on Webkit */
@@ -68,13 +70,13 @@ td{
 }
 
 .company-info {
-  position: absolute; /* Use absolute positioning */
-  bottom: 0; /* Stick to the bottom */
-  left: 0; /* Align to the left */
-  right: 0; /* Align to the right */
-  height: 50px; /* Set a fixed height for the footer */
-  text-align: center; /* Center text */
-  line-height: 50px; /* Center text vertically */
+  position: relative;
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  height: 50px; 
+  text-align: center;
+  line-height: 50px;
   font-size: 13px;
 }
 

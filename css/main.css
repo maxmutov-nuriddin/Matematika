@@ -84,6 +84,14 @@ td{
   display: none !important;
 }
 
+.btn_style{
+  display: flex;
+}
+
+.submit{
+  width: 100%;
+}
+
 
 @media screen and (max-width: 840px){
   .calculator {

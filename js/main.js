@@ -75,7 +75,7 @@ const updateTable = () => {
   // Добавляем строку для суммы
   const sumRow = document.createElement('tr');
   sumRow.innerHTML = `
-      <td><strong>Сумма</strong></td>
+      <td><strong>${format(sum(arrX))}</strong></td>
       <td><strong>${format(sum(arrY))}</strong></td>
       <td><strong>${format(sum(lnX))}</strong></td>
       <td><strong>${format(sum(lnY))}</strong></td>
@@ -88,7 +88,7 @@ const updateTable = () => {
   // Добавляем строку для средних значений
   const averageRow = document.createElement('tr');
   averageRow.innerHTML = `
-      <td><strong>Среднее</strong></td>
+      <td><strong>${format(average(arrX))}</strong></td>
       <td><strong>${format(average(arrY))}</strong></td>
       <td><strong>${format(average(lnX))}</strong></td>
       <td><strong>${format(average(lnY))}</strong></td>
@@ -113,8 +113,8 @@ button.addEventListener('click', (e) => {
     console.log('Please enter values for both X and Y');
   } else {
     // Преобразуем значения из input к числовому типу, заменяя запятые на точки и разбивая по запятой
-    let xValues = inpNumberX.value.split(',').map(num => parseFloat(num.replace(',', '.')));
-    let yValues = inpNumberY.value.split(',').map(num => parseFloat(num.replace(',', '.')));
+    let xValues = inpNumberX.value.split(',').map(num => parseFloat(num.replace(',', '.').trim()));
+    let yValues = inpNumberY.value.split(',').map(num => parseFloat(num.replace(',', '.').trim()));
 
     // Проверяем на корректность введенных данных
     if (xValues.some(isNaN) || yValues.some(isNaN)) {

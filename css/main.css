@@ -80,6 +80,10 @@ td{
   font-size: 13px;
 }
 
+.close{
+  display: none !important;
+}
+
 
 @media screen and (max-width: 840px){
   .calculator {

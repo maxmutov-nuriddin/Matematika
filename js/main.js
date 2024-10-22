@@ -1,3 +1,5 @@
+const close = document.querySelector('.company-info');
+
 let inpNumberX = document.querySelector('.number_for-x');
 let inpNumberY = document.querySelector('.number_for-y');
 
@@ -135,19 +137,21 @@ button.addEventListener('click', (e) => {
     let lnX2 = lnX.map((val) => val ** 2);
     let lnY2 = lnY.map((val) => val ** 2);
 
-    // Выводим результаты для всех элементов
-    console.log("ln(X) sum:", format(sum(lnX)));
-    console.log("ln(Y) sum:", format(sum(lnY)));
-    console.log("ln(X*Y) sum:", format(sum(lnXY)));
-    console.log("ln(X^2) sum:", format(sum(lnX2)));
-    console.log("ln(Y^2) sum:", format(sum(lnY2)));
+    // // Выводим результаты для всех элементов
+    // console.log("ln(X) sum:", format(sum(lnX)));
+    // console.log("ln(Y) sum:", format(sum(lnY)));
+    // console.log("ln(X*Y) sum:", format(sum(lnXY)));
+    // console.log("ln(X^2) sum:", format(sum(lnX2)));
+    // console.log("ln(Y^2) sum:", format(sum(lnY2)));
 
-    // Выводим средние значения
-    console.log("ln(X) average:", format(average(lnX)));
-    console.log("ln(Y) average:", format(average(lnY)));
-    console.log("ln(X*Y) average:", format(average(lnXY)));
-    console.log("ln(X^2) average:", format(average(lnX2)));
-    console.log("ln(Y^2) average:", format(average(lnY2)));
+    // // Выводим средние значения
+    // console.log("ln(X) average:", format(average(lnX)));
+    // console.log("ln(Y) average:", format(average(lnY)));
+    // console.log("ln(X*Y) average:", format(average(lnXY)));
+    // console.log("ln(X^2) average:", format(average(lnX2)));
+    // console.log("ln(Y^2) average:", format(average(lnY2)));
+    
+    close.classList.add('close');
 
     // Обновляем таблицу
     updateTable();
